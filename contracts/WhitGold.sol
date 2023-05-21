@@ -1,0 +1,12 @@
+// contracts/WhitGold.sol
+// SPDX-License-Identifier: MIT
+
+pragma solidity  ^0.8.17;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract WhitGold is ERC20 {
+    constructor(uint256 initialSupply) ERC20("WhitGold", "WG"){
+        _mint(msg.sender, initialSupply);
+    }
+}
